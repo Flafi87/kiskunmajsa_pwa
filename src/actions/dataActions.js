@@ -14,7 +14,7 @@ export const setChartLoading = () => ({
 export const changeResults = (results) => ({ type: CHANGE_RESULTS, payload: results });
 
 export const getData = (number) => (dispatch) => {
-  const url = `https://api.thingspeak.com/channels/71542/feeds.json?results=${number}`;
+  const url = `https://flafi.hu/weather?count=${number}&id=71542`;
   dispatch(setDataLoading());
   fetch(url, {
     method: 'GET',

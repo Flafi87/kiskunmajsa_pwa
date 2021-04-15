@@ -1,5 +1,5 @@
-var CACHE_NAME = "weather-data";
-var urlsToCache = ["/jsthings/kiskunmajsa/"];
+const CACHE_NAME = "weather-data";
+const urlsToCache = ["/jsthings/kiskunmajsa/"];
 
 // Install a service worker
 self.addEventListener("install", (event) => {
